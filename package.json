@@ -1,0 +1,31 @@
+{
+  "name": "omal-misr",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.13.1",
+    "core-js": "^3.9.1",
+    "nuxt": "^2.15.3"
+  },
+  "devDependencies": {
+    "@nuxtjs/vuetify": "^1.11.3"
+  },
+  "description": "## Build Setup",
+  "main": "nuxt.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mo7mad1996/omal-misr.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mo7mad1996/omal-misr/issues"
+  },
+  "homepage": "https://github.com/mo7mad1996/omal-misr#readme"
+}
