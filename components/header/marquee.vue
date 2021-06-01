@@ -5,9 +5,9 @@
         {{ lang == "ar" ? "آخر الأخبار" : "news" }}
       </span>
       <marquee behavior="" direction="left">
-        <div>
+        <span>
           لفتح باب التوظيف مش عارف ايه مثلا
-        </div>
+        </span>
       </marquee>
     </v-container>
   </div>

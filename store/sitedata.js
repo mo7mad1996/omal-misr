@@ -1,5 +1,4 @@
-export default {
-  state: () => {
+const state = () => {
     return {
       en: {
         header: {
@@ -406,7 +405,18 @@ export default {
             },
             {
               title: "بنك الخدمات المدنيه",
-              to: "/"
+              to: "/",
+              sub: [
+                { title: "طلب تقديم وظيفه", to: "/" },
+                { title: "طلب تقديم تمويل مشروع", to: "/" },
+                { title: "طلب تقديم شراكة مشروع", to: "/" },
+                { title: "طلب تقديم مقترح", to: "/" },
+                { title: "طلب تقديم شكوى", to: "/" },
+                { title: "طلب تقديم زياره", to: "/" },
+                { title: "طلب تقديم خدمه", to: "/" },
+                { title: "طلب تقديم معلومه", to: "/" },
+                { title: "طلب تقديم آخر", to: "/" }
+              ]
             },
             {
               title: "بنك التواصل السريع",
@@ -490,8 +500,12 @@ export default {
       }
     };
   },
-  getters: {
+  getters = {
     ar: state => state.ar,
     en: state => state.en
-  }
+  };
+
+export default {
+  state,
+  getters
 };
