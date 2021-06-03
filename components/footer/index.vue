@@ -10,7 +10,7 @@
       تلفزبون OMC
     </div>
     <div class="col-3 border-white">
-      <v-btn text to="/" dark plain block>
+      <v-btn text to="/Portfolio" dark plain block>
         سابقة اعمالنا
       </v-btn>
     </div>

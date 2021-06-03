@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <HeaderComponent />
-    <v-main class="layout bbbbbbbbbbbbbbbbbbbbbbbbb">
+    <v-main class="layout">
       <nuxt />
       <!-- Chat -->
       <Chat />

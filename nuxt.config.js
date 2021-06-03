@@ -19,6 +19,11 @@ export default {
       {
         rel: "stylesheet",
         href: "https://fonts.googleapis.com/css2?family=Almarai&display=swap"
+      },
+      {
+        rel: "stylesheet",
+        href:
+          "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
       }
     ]
   },
@@ -49,7 +54,11 @@ export default {
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
-    customVariables: ["~/assets/reset.scss", "~/assets/anmations.scss"],
+    customVariables: [
+      "~/assets/reset.scss",
+      "~/assets/anmations.scss",
+      "~/assets/variables.scss"
+    ],
     theme: {
       dark: false,
       themes: {

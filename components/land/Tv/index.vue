@@ -16,7 +16,6 @@ export default {
 
 <style lang="scss" scoped>
 .tv-container {
-  width: 700px;
   height: 380px;
   position: relative;
   margin: auto;

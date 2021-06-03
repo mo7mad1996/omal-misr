@@ -4,12 +4,8 @@
     <div class="chat-box" v-if="chatOpen">
       <h2 class="text-center">Chat Box</h2>
       <div class="chat-content">
-        <form @submit.prevent="sendMSG">
-          <input placeholder="Type..." autofocus v-model="msg" />
-          <v-btn type="submit" class="sendBtn" icon>
-            <v-icon>mdi-send</v-icon>
-          </v-btn>
-        </form>
+        <ChatContent />
+        <ChatForm />
       </div>
     </div>
 
@@ -25,17 +21,12 @@ export default {
   name: "Chat",
   data() {
     return {
-      chatOpen: false,
-      msg: ""
+      chatOpen: false
     };
   },
   methods: {
     toggleChat() {
       this.chatOpen = !this.chatOpen;
-    },
-    sendMSG() {
-      alert(this.msg);
-      this.msg = "";
     }
   }
 };
@@ -61,13 +52,14 @@ export default {
     padding: 10px;
     border-radius: 5px;
     box-shadow: 0 5px 10px #333, inset 2px 2px 4px #fff;
-    background: rgba(255, 255, 255, 0.9);
+    background: white;
     margin-bottom: 10px;
     animation: up 0.4s ease;
     width: min(400px, 80vw);
     height: 60vh;
     display: flex;
     flex-direction: column;
+    max-height: 100%;
 
     .chat-content {
       font-family: "Amiri", serif;
@@ -75,27 +67,17 @@ export default {
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
+      overflow: hidden;
+      position: relative;
 
-      form {
-        direction: ltr;
-        display: flex;
-        background: white;
-        font-family: "Amiri", serif;
-        padding: 5px;
-        border: 2px solid #333;
-
-        input {
-          flex: 1;
-          font-family: "Amiri", serif;
-          outline: none;
-          border-bottom: 2px solid #333;
-          display: block;
-        }
-
-        .sendBtn {
-          //   transform: rotate(-30deg);
-          padding: 10px;
-        }
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 20%;
+        background-image: linear-gradient(white, transparent);
       }
     }
   }
