@@ -22,6 +22,11 @@ export default {
   },
   components: {
     RightSide
+  },
+  head() {
+    return {
+      title: "مدينه عمال مصر"
+    };
   }
 };
 </script>
