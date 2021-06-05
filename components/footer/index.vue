@@ -27,7 +27,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-$red: #ab1111;
 .border-white {
   border-left: 2px solid white;
   border-right: 2px solid white;
