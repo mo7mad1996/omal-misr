@@ -1,5 +1,5 @@
 <template>
-  <main class="row">
+  <main class="row main">
     <div class="col-9">
       <article class="row">
         <h4 class="col-2 red">من نحن...؟</h4>
@@ -71,30 +71,37 @@
   </main>
 </template>
 
+<script>
+export default {
+  name: 'LeftSide'
+}
+</script>
+
 <style lang="scss" scoped>
+.main {
+  .red {
+    background: transparent !important;
+    color: $red !important;
+  }
 
-.red {
-  background: transparent !important;
-  color: $red !important;
-}
+  h4 {
+    font-size: 2em;
+  }
 
-h4 {
-  font-size: 2em;
-}
+  ol {
+    padding: 0 1.2em;
+    list-style: decimal-leading-zero;
+  }
 
-ol {
-  padding: 0 1.2em;
-  list-style: decimal-leading-zero;
-}
+  .end {
+    display: flex;
+    align-items: flex-end;
 
-.end {
-  display: flex;
-  align-items: flex-end;
-
-  img {
-    object-fit: contain;
-    width: 100%;
-    height: auto;
+    img {
+      object-fit: contain;
+      width: 100%;
+      height: auto;
+    }
   }
 }
 </style>

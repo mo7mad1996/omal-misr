@@ -85,6 +85,12 @@
   </aside>
 </template>
 
+<script>
+export default {
+  name: "RightSide"
+};
+</script>
+
 <style lang="scss" scoped>
 .aside {
   border-left: 5px solid #000002;

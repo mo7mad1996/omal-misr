@@ -460,7 +460,7 @@ const state = () => {
                 { title: "الاتصال بالمكتب الإعلامي", to: "/" }
               ]
             },
-            { title: "نشرة وظائف عمال مصر", to: "/" },
+            { title: "نشرة وظائف عمال مصر", to: "/Bulletin" },
             { title: "مؤتمرات وندوات", to: "/" },
             { title: "شهادات تكريم", to: "/" },
             {
@@ -490,7 +490,7 @@ const state = () => {
                 { title: "دفع التبرعات", to: "/" }
               ]
             },
-            { title: "المدن الصناعيه", to: "/" },
+            { title: "المدن الصناعيه", to: "/CitiesGuide" },
             { title: "القطاعات الصناعيه", to: "/" },
             { title: "أعلن معنا", to: "/" },
             { title: "أضف مصنعك", to: "/" },
@@ -502,7 +502,9 @@ const state = () => {
   },
   getters = {
     ar: state => state.ar,
-    en: state => state.en
+    en: state => state.en,
+    arHeader: state => state.ar.header,
+    enHeader: state => state.ar.header
   };
 
 export default {

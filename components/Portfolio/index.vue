@@ -66,14 +66,16 @@ export default {
     text-align: center;
   }
 
-  .prands .col-2 {
-    display: flex;
-    align-items: center;
-    padding: 4px;
+  .prands {
+    .col-2 {
+      display: flex;
+      align-items: center;
+      padding: 4px;
 
-    img {
-      width: 100%;
-      object-fit: cover;
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
     }
   }
 }
