@@ -1,5 +1,19 @@
 # omal-misr
 
+## upgrade vue version
+
+```bash
+# upgrade vue version
+$ npm install vue
+
+# upgrade vue-template-compiler version
+$ npm i vue-server-renderer
+
+# upgrade vue template compiler version
+$ npm i vue-template-compiler
+
+```
+
 ## Build Setup
 
 ```bash
