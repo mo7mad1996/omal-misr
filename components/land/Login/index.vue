@@ -33,10 +33,6 @@
             </div>
             <div class="col-4">
               <v-btn color="primary" to="/" block class="btn">انشاء حساب</v-btn>
-
-              <div class="row">
-                <div class="col"><i class="fa fa-facebook"></i></div>
-              </div>
             </div>
           </div>
         </div>

@@ -1,16 +1,28 @@
 <template>
   <div class="pa-5">
     <div class="tv-container">
-      <img
+      <!-- <img
         src="https://s3-eu-west-1.amazonaws.com/forasna/uploads/logos/clogo_2019-10-02-16-11-13_XegQ1k2aA6FH0j0PMX9RZQXX.jpg"
-      />
+      /> -->
+      <video ref="video" autoplay muted loop preload="metadata">
+        <source src="/land/videos/1.mp4" type="video/mp4" />
+      </video>
     </div>
+    <div></div>
   </div>
 </template>
 
 <script>
 export default {
-  name: "Tv"
+  name: "Tv",
+  methods: {
+    play(value) {
+      console.log(value);
+    }
+  },
+  mounted() {
+    this.$refs.video.play();
+  }
 };
 </script>
 
@@ -20,10 +32,12 @@ export default {
   position: relative;
   margin: auto;
 
-  img {
+  img,
+  video {
     width: 100%;
     height: 100%;
     object-fit: contain;
+    object-fit: cover;
     padding: 9px 0 29px 0px;
   }
 
