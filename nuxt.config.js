@@ -2,6 +2,7 @@ import colors from "vuetify/es5/util/colors";
 
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
+  target: "static",
   head: {
     titleTemplate: "%s - عمال مصر",
     htmlAttrs: {
@@ -63,7 +64,6 @@ export default {
       dark: false,
       themes: {
         dark: {
-          primary: colors.blue.darken2,
           accent: colors.grey.darken3,
           secondary: colors.amber.darken3,
           info: colors.teal.lighten1,
