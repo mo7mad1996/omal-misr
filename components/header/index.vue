@@ -1,7 +1,9 @@
 <template>
   <header>
     <SearchForm :lang="lang" />
-    <img class="bg" src="/headerBG.png" />
+    <nuxt-link to="/">
+      <img class="bg" src="/header/BG.png" />
+    </nuxt-link>
     <MarqueeComponent :lang="lang" />
     <NavBar :lang="lang" :ar="ar" :en="en" />
   </header>
@@ -17,12 +19,13 @@ import NavBar from "@/components/header/nav";
 
 export default {
   name: "HeaderComponent",
-  // components
+
   components: {
     SearchForm,
     MarqueeComponent,
     NavBar
   },
+
   computed: {
     ...mapGetters("settings", ["lang"]),
     ...mapGetters("sitedata", ["ar", "en"])
