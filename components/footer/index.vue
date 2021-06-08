@@ -48,7 +48,7 @@ export default {
 }
 
 .col-3 {
-  background: $red;
+  background: #bb1716;
   color: white;
   display: flex;
   align-items: center;

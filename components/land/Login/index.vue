@@ -7,14 +7,18 @@
     <form class="white pa-1 my-1">
       <label>الرجاء إدخال اسم الاشتراك وكلمة السر للدخول</label>
       <hr />
-      <div class="row my-3">
+
+      <div class="row my-1">
         <label class="col-4" for="username">اسم المستخدم:</label>
-        <div class="col-8"><input type="text" id="username" /></div>
+        <div class="col-8">
+          <input type="text" id="username" />
+        </div>
       </div>
-      <div class="row my-3">
+      <div class="row">
         <label class="col-4" for="password">كلمه السر:</label>
-        <div class="col-8"><input type="text" id="password" /></div>
+        <div class="col-8"><input type="password" id="password" /></div>
       </div>
+
       <div class="row">
         <div class="col-4"></div>
         <div class="col-8">
@@ -23,16 +27,18 @@
       </div>
       <div class="row">
         <div class="col-4"></div>
-        <div class="col-8">
+        <div class="col-8 ">
           <input id="remember" type="checkbox" />
           <label for="remember">ادخلني بشكل الي عند زيارتي مره اخرى</label>
           <br />
-          <div class="row">
-            <div class="col-6">
+          <div class="row white--text">
+            <div class="col-4">
               <v-btn color="primary" type="submit" class="btn">دخول</v-btn>
             </div>
-            <div class="col-4">
-              <v-btn color="primary" to="/" block class="btn">انشاء حساب</v-btn>
+            <div class="col-6">
+              <v-btn dark color="primary" to="/" block class="btn">
+                انشاء حساب
+              </v-btn>
             </div>
           </div>
         </div>
@@ -48,6 +54,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.row {
+  margin-top: 0;
+}
+
 .login {
   padding: 10px;
   display: flex;
@@ -59,10 +69,13 @@ export default {
   }
 
   form {
+    input[type="password"],
     input[type="text"] {
       background: #eee;
       padding: 2px 4px;
+      width: 70%;
     }
+
     [type="checkbox"] {
       height: 1em;
     }

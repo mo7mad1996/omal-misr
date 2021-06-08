@@ -55,6 +55,7 @@ nav > ul {
     flex: 1;
     white-space: nowrap;
     position: relative;
+
     a {
       width: 100%;
       height: 100%;

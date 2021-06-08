@@ -18,14 +18,14 @@ ol {
 
 @font-face {
   font-family: Mohammad;
-  src: url(~assets/Mohammad-Head.ttf);
+  src: url(~assets/fonts/Mohammad-Head.ttf);
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Amiri&display=swap");
 
 a {
   text-decoration: none;
-  color: inherit;
+  color: inherit !important;
 }
 
 a:hover {

@@ -73,8 +73,8 @@
 
 <script>
 export default {
-  name: 'LeftSide'
-}
+  name: "LeftSide"
+};
 </script>
 
 <style lang="scss" scoped>

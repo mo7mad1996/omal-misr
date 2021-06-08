@@ -101,7 +101,7 @@ export default {
 
   .red {
     background: transparent !important;
-    color: $red !important;
+    color: #bb1716 !important;
   }
 
   .pointer {
