@@ -25,19 +25,19 @@
       <v-col v-for="link in newLinks" :key="link.icon" class="px-0">
         <v-tooltip bottom color="black">
           <template v-slot:activator="{ on, attrs }">
-            <v-btn
-              small
-              dark
-              fab
-              :color="link.color"
-              class="mx-1"
-              target="_blank"
-              :href="link.to"
-              v-bind="attrs"
-              v-on="on"
-            >
-              <v-icon dark>mdi-{{ link.icon }}</v-icon>
-            </v-btn>
+            <a :href="link.to" target="_blank">
+              <v-btn
+                small
+                dark
+                fab
+                class="mx-1"
+                v-bind="attrs"
+                :color="link.color"
+                v-on="on"
+              >
+                <v-icon>mdi-{{ link.icon }}</v-icon>
+              </v-btn>
+            </a>
           </template>
           <span v-text="link.title" />
         </v-tooltip>
