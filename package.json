@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
+    "dev": "nuxt dev",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate"
@@ -15,7 +15,7 @@
     "nuxt": "^2.15.3",
     "nuxt-sass-resources-loader": "^2.0.5",
     "sass": "^1.32.12",
-    "sass-loader": "*",
+    "sass-loader": "^10.1.1",
     "vue": "^2.6.14",
     "vue-server-renderer": "^2.6.14",
     "vue-template-compiler": "^2.6.14"
