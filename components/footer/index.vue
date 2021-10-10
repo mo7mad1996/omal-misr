@@ -29,6 +29,7 @@ export default {
 <style scoped lang="scss">
 .footer {
   position: relative;
+  margin-top: 10px;
 
   &::before {
     content: "";
@@ -53,6 +54,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0;
 }
 
 a {

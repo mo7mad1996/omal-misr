@@ -4,7 +4,7 @@ export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   target: "static",
   head: {
-    titleTemplate: "%s - عمال مصر",
+    titleTemplate: "عمال مصر > %s",
     htmlAttrs: {
       lang: "ar",
       dir: "rtl"

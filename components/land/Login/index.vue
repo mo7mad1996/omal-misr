@@ -9,25 +9,25 @@
       <hr />
 
       <div class="row my-1">
-        <label class="col-4" for="username">اسم المستخدم:</label>
-        <div class="col-8">
+        <label class="col-4 py-0" for="username">اسم المستخدم:</label>
+        <div class="col-8 py-0">
           <input type="text" id="username" />
         </div>
       </div>
       <div class="row">
-        <label class="col-4" for="password">كلمه السر:</label>
-        <div class="col-8"><input type="password" id="password" /></div>
+        <label class="col-4 py-0" for="password">كلمه السر:</label>
+        <div class="col-8 py-0"><input type="password" id="password" /></div>
       </div>
 
       <div class="row">
         <div class="col-4"></div>
-        <div class="col-8">
+        <div class="col-8 pb-0">
           <nuxt-link to="/">لقد نسيت كلمه السر</nuxt-link>
         </div>
       </div>
       <div class="row">
         <div class="col-4"></div>
-        <div class="col-8 ">
+        <div class="col-8 pt-0">
           <input id="remember" type="checkbox" />
           <label for="remember">ادخلني بشكل الي عند زيارتي مره اخرى</label>
           <br />
@@ -54,10 +54,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.row {
-  margin-top: 0;
-}
-
 .login {
   padding: 10px;
   display: flex;
@@ -69,8 +65,7 @@ export default {
   }
 
   form {
-    input[type="password"],
-    input[type="text"] {
+    input:not([type="checkbox"]) {
       background: #eee;
       padding: 2px 4px;
       width: 70%;

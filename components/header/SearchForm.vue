@@ -86,7 +86,7 @@ export default {
           icon: "instagram"
         },
         {
-          to: "https://https://www.facebook.com/facebook-wifi",
+          to: "https://www.facebook.com/facebook-wifi",
           color: "#febd04",
           icon: "wifi"
         }
