@@ -5,11 +5,7 @@
         src="https://s3-eu-west-1.amazonaws.com/forasna/uploads/logos/clogo_2019-10-02-16-11-13_XegQ1k2aA6FH0j0PMX9RZQXX.jpg"
       /> -->
       <video ref="video" autoplay muted loop preload="metadata">
-        <source src="/land/videos/"+ 
-          Math.round(
-            Math.random() * 19
-          ).toString().padStart(2, '0')
-        +".mp4" type="video/mp4" />
+        <source :src="`/land/videos/${src}.mp4`" type="video/mp4" />
       </video>
     </div>
     <div></div>
@@ -19,6 +15,13 @@
 <script>
 export default {
   name: "Tv",
+  computed: {
+    src() {
+      return Math.round(Math.random() * 19)
+        .toString()
+        .padStart(2, "0");
+    }
+  },
   methods: {
     play(value) {
       console.log(value);
