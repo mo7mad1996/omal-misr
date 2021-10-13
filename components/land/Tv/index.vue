@@ -16,11 +16,10 @@
 export default {
   name: "Tv",
   computed: {
-    src() {
-      return Math.round(Math.random() * 19)
+    src: () =>
+      Math.round(Math.random() * 19) // 19 is number of Videos
         .toString()
-        .padStart(2, "0");
-    }
+        .padStart(2, "0")
   },
   methods: {
     play(value) {
